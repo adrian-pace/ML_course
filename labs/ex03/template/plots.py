@@ -33,3 +33,4 @@ def plot_train_test(train_errors, test_errors, lambdas, degree):
     leg = plt.legend(loc=1, shadow=True)
     leg.draw_frame(False)
     plt.savefig("ridge_regression")
+    

@@ -6,11 +6,6 @@ Ridge Regression
 
 import numpy as np
 
-
 def ridge_regression(y, tx, lamb):
     """implement ridge regression."""
-    # ***************************************************
-    # INSERT YOUR CODE HERE
-    # ridge regression: TODO
-    # ***************************************************
-    raise NotImplementedError
+    return np.linalg.solve((tx.T @ tx)+lamb*np.identity(tx.shape[1]), tx.T @ y)
